@@ -16,6 +16,9 @@ jobs:
       with:
         python-version: 3.7
 
+    - name: env
+      run: echo Hello $serviceAccount $serviceAccountTokenUri
+
     - name: Install python requirements
       run: pip3 install -r scripts/travis/requirements.txt
 
